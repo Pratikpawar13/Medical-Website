@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --blue: #4385a9;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255,51,153,0.05);
+}
+
+.heading span{
+    color: var(--blue);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: 0.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: var(--blue);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1100;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+header.logo{
+position: relative;
+font-weight: 700;
+color: #fff;
+text-decoration: none;
+font-size: 2rem;
+text-transform: uppercase; 
+letter-spacing: 2px;
+transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+header ul li{
+    position: relative;
+    List-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #666;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-weight: 500px;
+}
+header .sticky ul li a{
+   color: #666;
+}
+header .logo span{
+    color: var(--blue);
+}
+
+header .navbar {
+    display: flex;
+    color: #333;
+    gap: 2rem; /* Adds space between the links */
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: var(--blue);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 20px;
+    color:#333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,0.3);
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/bg-home.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 5rem;
+    color: #333;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color: var(--blue);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color: #000000;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid #fffefe;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .video-container h3{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content{
+    flex:1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 0.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+.icons-container{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-container .icons{
+    background: #fff;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
+
+ul{
+    font-size: 18px;
+    font-weight: 600;
+    gap: 20px;
+    margin-left: 20px;
+}
+ul li .nav-link:hover{
+    background: var(--blue);
+    color: white;
+    border-radius: 30px;
+}
+.hover:hover{
+    color:#4385A9;
+    font-weight: 700;
+    font-size: 22px;
+    
+}
+.hover{
+    display: inline-block;
+    position: relative;
+}
+.hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #4385A9;
+    transition: transform 0.25s ease-out;
+}
+.hover:hover::after {
+    transform: scaleX(1);
+}
+.hover::after {
+    transform-origin: bottom right;
+}
+.hover:hover::after {
+    transform-origin: bottom left;
+}
+.card-body{
+    position: relative;
+    max-width: 7;
+}
+
+.circle{
+    position: absolute;
+    background-color: var(--blue);
+    height: 370px;
+    width: 370px;
+    top: -20px;
+    left: 50px;
+    border-radius: 50%;
+    opacity: 0.8;  
+}
+.hero{
+    position: relative;
+    z-index: 1;
+}
+
+.py-5 .card-body .card-title{
+    font-size: 30px;
+}
+.py-5 .card-body .card-subtitle{
+    font-size: 60px;
+}
+.bg-mavi {
+    background-color: var(--blue)
+}
+
+.bg-goy {
+    background-color: #072035;
+}
+
+.bg-boz {
+    background-color: #f1f1f1
+}
+
+.text-mavi {
+    color: var(--blue)
+}
+
+.vh-50 {
+    min-height: 50vh;
+}
+
+.features:hover {
+    opacity: .5;
+}
+
+.serviceimgs {
+    width: 100px;
+    height: 100px;
+}
+
+.carousel-caption,
+.carousel-item {
+    height: 200px;
+}
+
+.carousel-indicators button {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50%;
+}
+
+.carousel-indicators button.active {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.carousel-inner h6 {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.carousel-inner p {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer p {
+    opacity: 0.7;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+
+footer h5 {
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Roboto";
+
+}
+
+.bt1 {
+    background: url("img/feature-1.jpg") center/cover;
+}
+
+.bt2 {
+    background: url("img/feature-2.jpg") center/cover;
+}
+
+.bt3 {
+    background: url("img/feature-3.jpg") center/cover;
+}
+
+.bt4 {
+    background: url("img/feature-4.jpg") center/cover;
+}
+
+.bt5 {
+    background: url("img/feature-5.jpg") center/cover;
+}
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+    
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%; /* Adjust the width */
+    height: 50px; /* Adjust the height */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+/* Adjust the textarea height specifically */
+textarea {
+    height: 150px; /* Increase height for a larger textarea */
+}
+
+@media (max-width:768px){
+
+    html .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 0.1rem solid rgba(0,0,0,0.1);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+
+    .icons-container .icons h3{
+        font-size: 2rem;
+    }
+    
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
+     
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+    
+}
